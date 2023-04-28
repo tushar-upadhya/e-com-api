@@ -4,10 +4,10 @@ import pro from "../image/gril.png";
 
 const Hero = () => {
     return (
-        <section className="bg-orange-200 h-[755px] bg-center py-24">
+        <section className="bg-orange-200 h-[648px] bg-center py-24">
             <div className="container mx-auto flex justify-around  h-full">
                 {/* text */}
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center ">
                     <div className="font-semibold flex items-center uppercase">
                         <div className="w-10 h-[2px] bg-red-800 mr-3"></div>
                         New Trend
@@ -20,7 +20,7 @@ const Hero = () => {
                 {/* image */}
                 <div>
                     <img
-                        className="hidden lg:block  "
+                        className="hidden lg:block h-[550px]"
                         src={pro}
                         alt="profile pic"
                     />

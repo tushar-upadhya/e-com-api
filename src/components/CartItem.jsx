@@ -39,7 +39,7 @@ const CartItem = ({ item }) => {
                         </div>
                     </div>
 
-                    <div className="flex gap-x-2 h-[36px] text-sm ">
+                    <div className="flex gap-x-2 h-[36px] text-sm  ">
                         {/* qty */}
 
                         <div className="flex flex-1 max-w-[100px]  items-center h-full border text-primary font-medium">
@@ -65,14 +65,9 @@ const CartItem = ({ item }) => {
                         </div>
                         {/* price */}
 
-                        <div className="flex-1 flex items-center justify-around">
-                            ₹ {price}
+                        <div className="flex flex-1 justify-end items-center text-primary font-medium">
+                            ₹ {`${Math.round(price * amount * 100) / 100}`}
                         </div>
-                        {/* total price */}
-
-                        <div className="flex-1 flex justify-end ic text-primary font-medium">{`${parseFloat(
-                            price * amount
-                        ).toFixed(2)}`}</div>
                     </div>
                 </div>
             </div>

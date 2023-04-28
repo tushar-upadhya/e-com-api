@@ -47,7 +47,7 @@ const Sidebar = () => {
 
                     <div className="uppercase font-semibold">
                         <span className="mr-2 ">Total: </span>₹{" "}
-                        {parseFloat(total).toFixed(2)}
+                        {Math.round(parseFloat(total))}
                     </div>
 
                     {/* clear cart */}

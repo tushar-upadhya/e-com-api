@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import { BsPlus, BsEyeFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+
 import { CartContext } from "../context/CartContext";
 
 const Product = ({ product }) => {
