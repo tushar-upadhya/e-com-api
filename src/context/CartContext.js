@@ -14,7 +14,7 @@ const CartProvider = ({ children }) => {
         const total = cart.reduce((accumulator, currentItem) => {
             return accumulator + currentItem.price * currentItem.amount;
         }, 0);
-        setTotal(Math.round(total * 100) / 100);
+        setTotal(Math.round((total * 100) / 100));
     });
 
     //* update item amount
@@ -70,7 +70,7 @@ const CartProvider = ({ children }) => {
         const cartItem = cart.find((item) => item.id === id);
         addToCart(cartItem, id);
         const roundedAmount = Math.round(cartItem.amount);
-        console.log("Rounded amount:", roundedAmount);
+        // console.log("Rounded amount:", roundedAmount);
     };
 
     // * decrease amount
